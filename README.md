@@ -234,10 +234,10 @@ python main.py
 ```
 ConMedPartApp/
 ├── assets/                # Graphic and media resources
-│   ├── iconapp_512.png   # Application icon
-│   ├── img.jpg           # UI images
-│   ├── Logofmpf.png      # Organization logo
-│   └── logopdf.jpg       # PDF template resources
+│   ├── IconApp.png   # Application icon
+│   ├── Backgd.jpg           # UI images
+│   ├── LogoFmpf_1.png      # Organization logo
+│   └── LogoFmpf_2.jpg       # PDF template resources
 │
 ├── database/             # Database management
 │   ├── candidats_db.py   # Candidate database operations
@@ -326,4 +326,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Current Version: 1.0.0
 - Last Updated: August 2025
 - Status: Active Development
+
 
