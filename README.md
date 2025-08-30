@@ -318,7 +318,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Contact
 - GitHub: [@ABDELALIKHOLTY](https://github.com/ABDELALIKHOLTY)
 - Email: Abdelalikholty@gmail.com
-- LinkedIn: www.linkedin.com/in/abdelalikholty
+- LinkedIn: LinkedIn:  [@Kholty Abdelali](www.linkedin.com/in/abdelalikholty)
 
 
 ## 📊 Project Status
@@ -326,5 +326,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Current Version: 1.0.0
 - Last Updated: August 2025
 - Status: Active Development
+
 
 
