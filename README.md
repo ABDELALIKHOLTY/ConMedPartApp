@@ -1,319 +1,268 @@
-# ConMedPartApp 🏥
+# 🏥 ConMedPartApp
 
 <div align="center">
-
 ![Logo](assets/iconapp_512.png)
 
-A desktop application for managing and distributing medical candidates.
+### **Intelligent Medical Candidate Distribution & Management System**
+
+
+
+
+*Transform your examination planning from 15-20 hours to just 5-10 minutes*
+
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt6-Modern%20GUI-green?style=for-the-badge&logo=qt)](https://www.riverbankcomputing.com/software/pyqt/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-lightblue?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-purple?style=for-the-badge)](https://github.com/ABDELALIKHOLTY/ConMedPartApp)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
 
 </div>
 
-## 📋 About
+---
 
-ConMedPartApp is a sophisticated desktop application engineered to streamline the management and distribution of candidates in the medical sector. This comprehensive solution offers an intuitive user interface built with PyQt6, enabling efficient administration of medical examinations and competitions.
+## 📌 Table of Contents
+- [About](#-about)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Troubleshooting](#-troubleshooting)
 
-### Core Objectives:
+---
 
-- Automate candidate distribution in examination rooms using advanced algorithms
-- Maximize space utilization while maintaining optimal testing conditions
-- Ensure fair and organized distribution of candidates
-- Streamline administrative workflows and reduce manual effort
-- Generate comprehensive documentation and reports instantly
+## 🎯 About
 
-### Key Benefits:
+**ConMedPartApp** is a desktop application designed to manage and distribute candidates across exam rooms. It enables institutions to automate the distribution process that was previously manual and time-consuming.
 
-- **Time Efficiency**: Reduce planning time by up to 80%
-- **Error Prevention**: Automated checks and validations
-- **Resource Optimization**: Smart room allocation algorithms
-- **Data Security**: Robust SQLite database implementation
-- **User-Friendly**: Intuitive interface requiring minimal training
+### Use Cases:
+- 🏫 Manage candidates for entrance exams
+- 📍 Assign exam rooms
+- 📄 Generate documents (displays, attendance lists)
+- 📊 Multi-center management
 
-The application is developed in Python with a modular architecture, ensuring long-term stability, maintainability, and easy updates.
+---
 
 ## ✨ Features
 
-- 📊 **Advanced Dashboard Interface**:
-  - Real-time system status monitoring
-  - Quick access to all major functions
-  - Customizable views and layouts
-  - Comprehensive statistics and analytics
-  - User activity tracking
+### 👥 Candidate Management
+- ✅ Import candidate lists (CSV/Excel)
+- ✅ Display and manage candidates in interface
+- ✅ View details: Code, Name, First Name, region, province, languages
+- ✅ Secure storage in SQLite database
 
-- 👥 **Complete Candidate Management**:
-  - Add, modify, and remove candidates
-  - Bulk import/export of candidate data
-  - Advanced search and filtering capabilities
-  - Secure information storage
-  - Candidate history tracking
-  - Custom field support for additional data
+### 🏫 Room Configuration
+- ✅ Create exam centers
+- ✅ Add rooms per center
+- ✅ Define room capacity
+- ✅ Classify rooms by type
+- ✅ View total capacity in real-time
 
-- 🏫 **Examination Room Management**:
-  - Room capacity configuration
-  - Proctor assignment system
-  - Availability scheduling
-  - Room layout customization
-  - Equipment and facilities tracking
-  - Accessibility considerations
+### 📍 Candidate Distribution
+- ✅ Automatically distribute candidates to rooms
+- ✅ Check total available capacity
+- ✅ Manage constraints (capacity, room type)
+- ✅ Display distribution results
 
-- 📍 **Intelligent Distribution System**:
-  - Smart distribution algorithm
-  - Capacity constraint management
-  - Space optimization
-  - Custom distribution rules
-  - Conflict detection and resolution
-  - Manual override capabilities
+### 📄 Document Generation
+- ✅ **Display** : Candidate lists by room (PDF)
+- ✅ **Attendance** : Attendance sheets per room (PDF)
+- ✅ Generate documents for all centers or specific center
+- ✅ Professional documents ready to print
 
-- 📝 **Comprehensive Results Generation**:
-  - Professional PDF exports
-  - Detailed room plans
-  - Statistical reports
-  - Custom report templates
-  - Batch processing support
+### 💾 Data Management
+- ✅ Automatic database backup
+- ✅ Three separate SQLite databases (candidates, rooms, distribution)
+- ✅ Load and reuse saved data
 
+---
 
-- 💾 **Robust Database Integration**:
-  - High-performance SQLite implementation
-  - Automatic data backup
-  - Data integrity checks
-  - Transaction management
-  - Version control for data changes
-  - Easy database maintenance
+## 🚀 Installation
 
-## 🚀 Installation Guide
+### Requirements
+- Python 3.8+
+- pip
+- Windows, Linux or macOS
 
-### Prerequisites
-- Python 3.x (3.8 or higher recommended)
-- Git
-- Windows, Linux, or macOS
-- 4GB RAM minimum (8GB recommended)
-- 500MB free disk space
+### Installation Steps
 
-### Step-by-Step Installation
-
-1. Clone the repository:
+**1. Clone the project**
 ```bash
 git clone https://github.com/ABDELALIKHOLTY/ConMedPartApp.git
 cd ConMedPartApp
 ```
 
-2. Create a virtual environment (recommended):
+**2. Create virtual environment**
 ```bash
 python -m venv venv
 
-# On Windows
+# Windows
 venv\Scripts\activate
 
-# On Linux/macOS
+# Linux/macOS
 source venv/bin/activate
 ```
 
-3. Install dependencies:
+**3. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Verify installation:
-```bash
-python -c "import PyQt6; import pandas; import reportlab; print('All dependencies installed successfully!')"
-```
-
-### Building from Source
-
-To create a standalone executable:
-```bash
-python build_exe.py
-```
-
-The executable will be available in the `build/ConMedPartApp` directory.
-
-### Troubleshooting
-
-If you encounter any issues:
-1. Ensure all prerequisites are met
-2. Check Python version compatibility
-3. Update pip: `python -m pip install --upgrade pip`
-4. Clear pip cache: `pip cache purge`
-5. Install individual dependencies if needed
-
-## 🎯 Usage Guide
-
-### Getting Started:
-
+**4. Launch application**
 ```bash
 python main.py
 ```
 
-### Detailed User Guide:
+---
 
-1. **Initial Setup**
-   - Launch the application
-   - Configure system preferences
-   - Set up user permissions if needed
-   - Verify database connectivity
-
-2. **Candidate Management**
-   - Individual candidate entry with validation
-   - Bulk import via Excel/CSV files
-   - Advanced search and filtering
-   - Candidate information updates
-   - History tracking and audit logs
-   - Data export capabilities
-
-3. **Room Configuration**
-   - Define available examination rooms
-   - Set room capacities and constraints
-   - Assign proctors and staff
-   - Configure room layouts
-   - Set equipment requirements
-   - Define accessibility parameters
-
-4. **Automatic Distribution Process**
-   - Initialize the distribution algorithm
-   - Set distribution parameters
-   - Review preliminary assignments
-   - Handle special cases and exceptions
-   - Manual adjustments if needed
-   - Finalize distributions
-
-5. **Document Generation**
-   - Generate room allocation lists
-   - Create detailed room plans
-   - Export proctor assignments
-   - Generate statistical reports
-   - Create custom reports
-   - Batch export capabilities
-
-6. **System Maintenance**
-   - Database backup procedures
-   - Data integrity checks
-   - System performance optimization
-   - User management
-   - Log file management
-   - Software updates
-
-## 🛠️ Technology Stack
-
-### Core Technologies
-- **Python** - Primary programming language
-- **PyQt6** - Professional GUI Framework
-  - Custom widgets
-  - Responsive layouts
-  - Modern design elements
-  - Event-driven architecture
-
-### Database Management
-- **SQLite** - Embedded database
-  - ACID compliance
-  - Transaction support
-  - Concurrent access handling
-  - Data integrity protection
-
-### Data Processing
-- **Pandas** - Data manipulation and analysis
-  - High-performance data structures
-  - Statistical operations
-  - Data import/export capabilities
-  - Data transformation tools
-
-### Document Generation
-- **ReportLab** - PDF generation
-  - Custom templates
-  - Dynamic content generation
-  - Professional formatting
-  - Multi-page support
-
-### Image Processing
-- **Pillow** - Image handling
-  - Format conversion
-  - Image optimization
-  - Thumbnail generation
-  - Visual asset management
-
-## 📁 Project Structure
+## 📚 Project Structure
 
 ```
 ConMedPartApp/
-├── assets/                # Graphic and media resources
-│   ├── IconApp.png   # Application icon
-│   ├── Backgd.jpg           # UI images
-│   ├── LogoFmpf_1.png      # Organization logo
-│   └── LogoFmpf_2.jpg       # PDF template resources
 │
-├── database/             # Database management
-│   ├── candidats_db.py   # Candidate database operations
-│   ├── repartition_db.py # Distribution database operations
-│   ├── salles_db.py      # Room database operations
-│   ├── candidats.db      # Candidate SQLite database
-│   ├── repartition.db    # Distribution SQLite database
-│   └── salles.db        # Room SQLite database
+├── main.py                      # Entry point
+├── dashboard.py                 # Main interface
+├── repartition.py              # Distribution logic
+├── resultats.py                # PDF document generation
+├── salles.py                   # Room management
+├── widgets.py                  # Custom components
 │
-├── build/               # Build and distribution files
-│   └── ConMedPartApp/   # Compiled application
+├── database/                   # Database layer
+│   ├── candidats_db.py        # Candidate management
+│   ├── salles_db.py           # Room management
+│   ├── repartition_db.py      # Distribution history
+│   └── *.db                   # SQLite files
 │
-├── main.py             # Application entry point
-├── dashboard.py        # Main interface and control logic
-├── repartition.py      # Distribution algorithms
-├── resultats.py        # Results processing and generation
-├── salles.py          # Room management logic
-├── widgets.py         # Custom UI components
-├── build_exe.py       # Build script for executable
-└── requirements.txt    # Project dependencies
+├── assets/                     # Resources
+│   ├── iconapp_512.png        # App icon
+│   ├── Logofmpf.png           # Institution logo
+│   └── img.jpg                # UI images
+│
+│ 
+│   
+│   
+│
+├── requirements.txt           # Python dependencies
+├── README.md                 # This file
+└── LICENSE                   # MIT License
 ```
 
-### Component Details:
+---
 
-- **main.py**: Application bootstrapping and initialization
-- **dashboard.py**: Core UI and business logic implementation
-- **repartition.py**: Advanced distribution algorithms
-- **resultats.py**: Comprehensive reporting system
-- **salles.py**: Room management and optimization
-- **widgets.py**: Reusable UI components library
-- **build_exe.py**: Production build configuration
+## 🎮 Usage
 
-## 🤝 Contributing
+### Standard Workflow
 
-We welcome contributions to ConMedPartApp! Here's how you can help:
+#### Step 1️⃣ : Configure Rooms
+1. Open the application
+2. Go to **"Rooms"** in the menu
+3. Add a center (ex: "Center Fes")
+4. Add rooms with:
+   - Name (ex: "Room A1")
+   - Capacity (number of seats)
+   - Type (ex: "Normal", "Accessible")
+5. Save
 
-### Ways to Contribute
-- Report bugs and issues
-- Suggest new features
-- Improve documentation
-- Submit pull requests
-- Share feedback
+#### Step 2️⃣ : Import Candidates
+1. Go to **"Candidates"**
+2. Import CSV/Excel file with columns:
+   - Code (candidate ID)
+   - LastName (Name)
+   - FirstName (First Name)
+   - region (Region)
+   - province (Province)
+   - langues (Languages)
+3. Data is automatically saved
 
-### Development Process
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to your fork
-5. Submit a pull request
+#### Step 3️⃣ : Launch Distribution
+1. Go to **"Distribution"**
+2. Verify that:
+   - Candidates are imported ✓
+   - Rooms are configured ✓
+   - Total capacity ≥ number of candidates ✓
+3. Click **"Start distribution"**
+4. Check results
 
-### Code Standards
-- Follow PEP 8 guidelines
-- Write comprehensive docstrings
-- Maintain test coverage
-- Keep commits atomic
-- Use meaningful commit messages
+#### Step 4️⃣ : Generate Documents
+1. Go to **"Results"**
+2. Select center
+3. Generate:
+   - **Display** : Candidate display by room (PDF)
+   - **Attendance** : Attendance sheet (PDF)
+4. PDFs are generated and ready to print
 
-## 🔒 Security
+---
 
-- All data is stored locally
-- SQLite database encryption
-- Secure password handling
-- Regular security updates
-- Access control implementation
+## 📊 Technologies Used
 
-## 📝 License
+| Technology | Usage |
+|-----------|-------|
+| **Python 3.8+** | Programming language |
+| **PyQt6** | Graphical interface |
+| **SQLite3** | Database |
+| **Pandas** | Data processing |
+| **ReportLab** | PDF generation |
+| **Pillow** | Image processing |
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-## 👥 Author & Maintainers
+## ⚙️ Data Formats
 
-### Lead Developer
-- **ABDELALI KHOLTY**
-  - Project Architecture
-  - Core Development
-  - Technical Documentation
+### Candidate File (CSV/Excel)
+```
+Code,LastName,FirstName,region,province,langues
+001,Dupont,Jean,Fès,Province Fès,FR
+002,Martin,Marie,Marrakech,Province Marrakech,FR AR
+```
+
+### Room Configuration
+- Add via interface
+- Save in database
+
+---
+
+## 🔧 Troubleshooting
+
+### Application won't start
+```bash
+# Reinstall dependencies
+pip install --force-reinstall -r requirements.txt
+```
+
+### Error: "Database locked"
+```bash
+# Close all app instances
+# Delete journal files
+rm database/*.db-journal
+```
+
+### Rooms won't add
+- Verify that you created a center first
+- Save after each addition
+
+### PDF generation fails
+- Verify ReportLab is installed: `pip install reportlab`
+- Check folder write permissions
+
+---
+
+## 🔒 Data Storage
+
+- **Local Storage** : All data stored in SQLite database on your machine
+- **Privacy** : No data sent to external servers
+- **Backup** : .db files are in `database/` folder
+
+
+
+---
+
+## 👨‍💼 Author
+
+**ABDELALI KHOLTY**
+
+
+
+
+
 
 ### Contact
 - GitHub: [ABDELALIKHOLTY](https://github.com/ABDELALIKHOLTY)
